@@ -1,0 +1,93 @@
+N1.
+double a, b ;
+a = 7.15; b = 100;
+Console.WriteLine($"{a}  {b}");
+Console.ReadKey();
+N2.
+int a = 5;
+int b = 10;
+int c = 21;
+Console.WriteLine(a);
+Console.WriteLine(b);
+Console.WriteLine(c);
+Console.ReadKey();
+N3.
+Console.WriteLine("Введите расстояние в см :");
+            int i = int.Parse(Console.ReadLine());
+            Console.Write("Полных м: ");
+            Console.WriteLine(i/100);
+N4.
+int DaysPassed, WeeksFull;
+Console.WriteLine("Введите, сколько прошло дней:");
+DaysPassed = Convert.ToInt32(Console.ReadLine());
+if (DaysPassed < 7)
+   Console.WriteLine($"С момента отсчета прошло 0 целых недель, а остаток дней равен - { DaysPassed} ");
+if (DaysPassed <= -1)
+   Console.WriteLine("Количество дней не может быть меньше нуля ");
+WeeksFull = DaysPassed / 7;
+DaysPassed -= WeeksFull * 7;
+Console.WriteLine($"Полных недель с начала отчета прошло - { WeeksFull});
+N5.
+int x;
+int y;
+int a;
+int sum;
+int prod;
+Console.Write("Введите двузначное число: ");
+a = Convert.ToInt32(Console.ReadLine());
+while ((a > 99) | (a < 10))
+{
+   Console.Write("Ошибка!Введите число от 10 до 99: ");
+   a = Convert.ToInt32(Console.ReadLine());
+   Console.WriteLine();
+}
+x = a / 10;
+y = a % 10;
+sum = x + y;
+prod = x * y;
+Console.WriteLine("А) Число десятков: " + x);
+Console.WriteLine("Б) Число единиц: " + y);
+Console.WriteLine("В) Сумма цифр числа: " + sum);
+Console.WriteLine("Г) Произведение цифр числа: " + prod);
+Console.ReadKey();
+N6.
+bool A, B, C, X, Y, Z;
+A = true;
+B = false;
+C = false;
+X = A | B;
+Y = A & B;
+Z = B | C;
+Console.WriteLine($"{X}, {Y}, {Z}");
+N7.
+double R, a, X, Z;
+R = double.Parse(Console.ReadLine());
+a = double.Parse(Console.ReadLine());
+X = Math.Pow(a, 2);
+Z = Math.Pow(R, 2) * Math.PI;
+if (X < Z)
+   Console.WriteLine($"Площадь квадрата {X} меньше площади круга {Z}");
+else if (Z < X)
+   Console.WriteLine($"Площадь круга {Z} меньше площади квадрата {x}");
+else
+   Console.WriteLine($"Площадь круга {Z} и площадь квадрата {x} равны");
+N8.
+double v1, v2, m1, m2;
+Console.WriteLine("Введите массу первого материала: ");
+m1=Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите массу второго материала: ");
+m2 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите объем первого материала: ");
+v1 = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Введите объем второго материала: ");
+v2 = Convert.ToDouble(Console.ReadLine());
+double p1 = m1 / v1;
+double p2 = m2 / v2;
+if (p1>p2)
+  Console.WriteLine("Плотность первого материала выше: " + p1);
+else
+  Console.WriteLine("Плотность второго материала выше: " + p2);
+N9.
+-
+N10.
+-
